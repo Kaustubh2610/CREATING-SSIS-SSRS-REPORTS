@@ -1,0 +1,162 @@
+<?xml version="1.0"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+<xsd:element name="Crime">
+<xsd:complexType>
+<xsd:sequence>
+<xsd:element maxOccurs="unbounded" minOccurs="1" ref="Incident_Dim"/>
+<xsd:element maxOccurs="unbounded" minOccurs="1" ref="Crime_Dim"/>
+<xsd:element maxOccurs="unbounded" minOccurs="1" ref="Agency_Dim"/>
+<xsd:element maxOccurs="unbounded" minOccurs="1" ref="Location_Dim"/>
+<xsd:element maxOccurs="unbounded" minOccurs="1" ref="Date_Dim"/>
+<xsd:element maxOccurs="unbounded" minOccurs="1" ref="Crime_Fact"/>
+</xsd:sequence>
+</xsd:complexType>
+<xsd:key name="Incident_PK">
+<xsd:selector xpath="Incident_Dim/IncidentKey"/>
+<xsd:field xpath="."/>
+</xsd:key>
+<xsd:keyref name="Incident_ref_Key" refer="Incident_PK">
+<xsd:selector xpath="Crime_Fact/IncidentKey"/>
+<xsd:field xpath="."/>
+</xsd:keyref>
+<xsd:key name="CRNumber_PK">
+<xsd:selector xpath=" Crime_Dim/CrimeKey"/>
+<xsd:field xpath="."/>
+</xsd:key>
+<xsd:keyref name="CRNumber_ref_Key" refer="CRNumber_PK">
+<xsd:selector xpath="Crime_Fact/CrimeKey"/>
+<xsd:field xpath="."/>
+</xsd:keyref>
+<xsd:key name="Agency_PK">
+<xsd:selector xpath="Agency_Dim/AgencyKey"/>
+<xsd:field xpath="."/>
+</xsd:key>
+<xsd:keyref name="Agency_ref_Key" refer="Agency_PK">
+<xsd:selector xpath="Crime_Fact/AgencyKey"/>
+<xsd:field xpath="."/>
+</xsd:keyref>
+<xsd:key name="Location_PK">
+<xsd:selector xpath="Location_Dim/LocationKey"/>
+<xsd:field xpath="."/>
+</xsd:key>
+<xsd:keyref name="Location_ref_Key" refer="Location_PK">
+<xsd:selector xpath="Crime_Fact/LocationKey"/>
+<xsd:field xpath="."/>
+</xsd:keyref>
+<xsd:key name="Date_PK">
+<xsd:selector xpath="Date_Dim/CrimeDateKey"/>
+<xsd:field xpath="."/>
+</xsd:key>
+<xsd:keyref name="Date_ref_Key" refer="Date_PK">
+<xsd:selector xpath="Crime_Fact/CrimeDateKey"/>
+<xsd:field xpath="."/>
+</xsd:keyref>
+</xsd:element>
+<xsd:element name="Incident_Dim">
+<xsd:complexType>
+<xsd:sequence>
+<xsd:element ref="IncidentKey"/>
+<xsd:element ref="IncidentId"/>
+<xsd:element ref="OffenceCode"/>
+<xsd:element ref="NIBRSCode"/>
+</xsd:sequence>
+</xsd:complexType>
+</xsd:element>
+<xsd:element name="Crime_Dim">
+<xsd:complexType>
+<xsd:sequence>
+<xsd:element ref="CrimeKey"/>
+<xsd:element ref="Victims"/>
+<xsd:element ref="CRNumber"/>
+<xsd:element ref="CrimeName1"/>
+<xsd:element ref="CrimeName2"/>
+<xsd:element ref="CrimeName3"/>
+</xsd:sequence>
+</xsd:complexType>
+</xsd:element>
+<xsd:element name="Agency_Dim">
+<xsd:complexType>
+<xsd:sequence>
+<xsd:element ref="AgencyKey"/>
+<xsd:element ref="Place"/>
+<xsd:element ref="Sector"/>
+<xsd:element ref="Beat"/>
+<xsd:element ref="PRA"/>
+</xsd:sequence>
+</xsd:complexType>
+</xsd:element>
+<xsd:element name="Location_Dim">
+<xsd:complexType>
+<xsd:sequence>
+<xsd:element ref="LocationKey"/>
+<xsd:element ref="City"/>
+<xsd:element ref="State"/>
+<xsd:element ref="ZipCode"/>
+<xsd:element ref="PoliceDistrictName"/>
+<xsd:element ref="BlockAddress"/>
+<xsd:element ref="StreetType"/>
+<xsd:element ref="StreetName"/>
+<xsd:element ref="PoliceDistrictNumber"/>
+</xsd:sequence>
+</xsd:complexType>
+</xsd:element>
+<xsd:element name="Date_Dim">
+<xsd:complexType>
+<xsd:sequence>
+<xsd:element ref="CrimeDateKey"/>
+<xsd:element ref="FullDate"/>
+<xsd:element ref="DayOfWeek"/>
+<xsd:element ref="TypeOfDay"/>
+<xsd:element ref="DayOfMonth"/>
+<xsd:element ref="Month"/>
+<xsd:element ref="Quarter"/>
+<xsd:element ref="Year"/>
+</xsd:sequence>
+</xsd:complexType>
+</xsd:element>
+<xsd:element name="Crime_Fact">
+<xsd:complexType>
+<xsd:sequence>
+<xsd:element ref="IncidentKey"/>
+<xsd:element ref="CrimeKey"/>
+<xsd:element ref="AgencyKey"/>
+<xsd:element ref="LocationKey"/>
+<xsd:element ref="CrimeDateKey"/>
+</xsd:sequence>
+</xsd:complexType>
+</xsd:element>
+<!--Now writing simple type elements containing data-->
+<xsd:element name="IncidentKey" type="xsd:int"/>
+<xsd:element name="IncidentId" type="xsd:int" />
+<xsd:element name="OffenceCode" type="xsd:int" />
+<xsd:element name="NIBRSCode" type="xsd:string" />
+<xsd:element name="CrimeKey" type="xsd:int"/>
+<xsd:element name="Victims" type="xsd:int" />
+<xsd:element name="CRNumber" type="xsd:int" />
+<xsd:element name="CrimeName1" type="xsd:string" />
+<xsd:element name="CrimeName2" type="xsd:string" />
+<xsd:element name="CrimeName3" type="xsd:string" />
+<xsd:element name="AgencyKey" type="xsd:int"/>
+<xsd:element name="Ageny" type="xsd:string" />
+<xsd:element name="Place" type="xsd:string" />
+<xsd:element name="Sector" type="xsd:string" />
+<xsd:element name="Beat" type="xsd:string" />
+<xsd:element name="PRA" type="xsd:int" />
+<xsd:element name="LocationKey" type="xsd:int"/>
+<xsd:element name="City" type="xsd:string" />
+<xsd:element name="State" type="xsd:string" />
+<xsd:element name="ZipCode" type="xsd:int" />
+<xsd:element name="PoliceDistrictName" type="xsd:string" />
+<xsd:element name="BlockAddress" type="xsd:string" />
+<xsd:element name="StreetType" type="xsd:string" />
+<xsd:element name="StreetName" type="xsd:string" />
+<xsd:element name="PoliceDistrictNumber" type="xsd:string" />
+<xsd:element name="CrimeDateKey" type="xsd:int" />
+<xsd:element name="FullDate" type="xsd:string" />
+<xsd:element name="DayOfWeek" type="xsd:string" />
+<xsd:element name="TypeOfDay" type="xsd:string" />
+<xsd:element name="DayOfMonth" type="xsd:string" />
+<xsd:element name="Month" type="xsd:int" />
+<xsd:element name="Quarter" type="xsd:string" />
+<xsd:element name="Year" type="xsd:string" />
+</xsd:schema>

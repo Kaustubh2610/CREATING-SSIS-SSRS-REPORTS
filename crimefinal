@@ -1,0 +1,248 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Crime xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<Incident_Dim>
+	<IncidentKey>1</IncidentKey>
+	<IncidentId>201123049</IncidentId>
+	<OffenceCode>3520</OffenceCode>
+	<NIBRSCode>35A</NIBRSCode>
+</Incident_Dim>
+<Incident_Dim>
+	<IncidentKey>2</IncidentKey>
+	<IncidentId>201123422</IncidentId>
+	<OffenceCode>9041</OffenceCode>
+	<NIBRSCode>90Z</NIBRSCode>
+</Incident_Dim>
+<Incident_Dim>
+	<IncidentKey>3</IncidentKey>
+	<IncidentId>201151115</IncidentId>
+	<OffenceCode>2303</OffenceCode>
+	<NIBRSCode>23C</NIBRSCode>
+</Incident_Dim>
+<Incident_Dim>
+	<IncidentKey>4</IncidentKey>
+	<IncidentId>201151876</IncidentId>
+	<OffenceCode>1206</OffenceCode>
+	<NIBRSCode>120</NIBRSCode>
+</Incident_Dim>
+<Incident_Dim>
+	<IncidentKey>5</IncidentKey>
+	<IncidentId>201156413</IncidentId>
+	<OffenceCode>1315</OffenceCode>
+	<NIBRSCode>13A</NIBRSCode>
+</Incident_Dim>
+<Crime_Dim>
+	<CrimeKey>1</CrimeKey>
+	<Victims>1</Victims>
+	<CRNumber>17007073</CRNumber>
+	<CrimeName1>Crime Against Society</CrimeName1>
+	<CrimeName2>Drug/Narcotic Violations</CrimeName2>
+	<CrimeName3>DRUGS - OPIUM OR DERIVATIVE - SELL</CrimeName3>
+</Crime_Dim>
+<Crime_Dim>
+	<CrimeKey>2</CrimeKey>
+	<Victims>1</Victims>
+	<CRNumber>17011140</CRNumber>
+	<CrimeName1>Other</CrimeName1>
+	<CrimeName2>All Other Offenses</CrimeName2>
+	<CrimeName3>SUICIDE - COMPLETED</CrimeName3>
+</Crime_Dim>
+<Crime_Dim>
+	<CrimeKey>3</CrimeKey>
+	<Victims>1</Victims>
+	<CRNumber>170528659</CRNumber>
+	<CrimeName1>Crime Against Property</CrimeName1>
+	<CrimeName2>Shoplifting</CrimeName2>
+	<CrimeName3>LARCENY - SHOPLIFTING</CrimeName3>
+</Crime_Dim>
+<Crime_Dim>
+	<CrimeKey>4</CrimeKey>
+	<Victims>1</Victims>
+	<CRNumber>170529655</CRNumber>
+	<CrimeName1>Crime Against Property</CrimeName1>
+	<CrimeName2>Robbery</CrimeName2>
+	<CrimeName3>ROBBERY - STREET-STRONG-ARM</CrimeName3>
+</Crime_Dim>
+<Crime_Dim>
+	<CrimeKey>5</CrimeKey>
+	<Victims>1</Victims>
+	<CRNumber>170535538</CRNumber>
+	<CrimeName1>Crime Against Person</CrimeName1>
+	<CrimeName2>Aggravated Assault</CrimeName2>
+	<CrimeName3>ASSAULT - AGGRAVATED - OTHER</CrimeName3>
+</Crime_Dim>
+<Agency_Dim>
+	<AgencyKey>1</AgencyKey>
+	<Place>Residence - Single Family</Place>
+	<Sector>G</Sector>
+	<Beat>3G2</Beat>
+	<PRA>104</PRA>
+</Agency_Dim>
+<Agency_Dim>
+	<AgencyKey>2</AgencyKey>
+	<Place>Residence - Single Family</Place>
+	<Sector>G</Sector>
+	<Beat>4J2</Beat>
+	<PRA>642</PRA>
+</Agency_Dim>
+<Agency_Dim>
+	<AgencyKey>3</AgencyKey>
+	<Place>Retail - Department/Discount Store</Place>
+	<Sector>M</Sector>
+	<Beat>5M1</Beat>
+	<PRA>701</PRA>
+</Agency_Dim>
+<Agency_Dim>
+	<AgencyKey>4</AgencyKey>
+	<Place>Residence - Yard</Place>
+	<Sector>H</Sector>
+	<Beat>3H1</Beat>
+	<PRA>130</PRA>
+</Agency_Dim>
+<Agency_Dim>
+	<AgencyKey>5</AgencyKey>
+	<Place>Residence - Other</Place>
+	<Sector>H</Sector>
+	<Beat>1B3</Beat>
+	<PRA>129</PRA>
+</Agency_Dim>
+<Location_Dim>
+	<LocationKey>1</LocationKey>
+	<City>SILVER SPRING</City>
+	<State>MD</State>
+	<ZipCode>20901</ZipCode>
+	<PoliceDistrictName>SILVER SPRING</PoliceDistrictName>
+	<BlockAddress>9700 BLK  LORAIN AVE</BlockAddress>
+	<StreetType>AVE</StreetType>
+	<StreetName>LORAIN</StreetName>
+	<PoliceDistrictNumber>3D</PoliceDistrictNumber>
+</Location_Dim>
+<Location_Dim>
+	<LocationKey>2</LocationKey>
+	<City>OLNEY</City>
+	<State>MD</State>
+	<ZipCode>20832</ZipCode>
+	<PoliceDistrictName>WHEATON</PoliceDistrictName>
+	<BlockAddress>17100 BLK  THORNTONDALE CT</BlockAddress>
+	<StreetType>CT</StreetType>
+	<StreetName>THORNTONDALE</StreetName>
+	<PoliceDistrictNumber>4D</PoliceDistrictNumber>
+</Location_Dim>
+<Location_Dim>
+	<LocationKey>3</LocationKey>
+	<City>GERMANTOWN</City>
+	<State>MD</State>
+	<ZipCode>20876</ZipCode>
+	<PoliceDistrictName>GERMANTOWN</PoliceDistrictName>
+	<BlockAddress>20900 BLK  FREDERICK RD</BlockAddress>
+	<StreetType>RD</StreetType>
+	<StreetName>FREDERICK</StreetName>
+	<PoliceDistrictNumber>5D</PoliceDistrictNumber>
+</Location_Dim>
+<Location_Dim>
+	<LocationKey>4</LocationKey>
+	<City>SILVER SPRING</City>
+	<State>MD</State>
+	<ZipCode>20912</ZipCode>
+	<PoliceDistrictName>SILVER SPRING</PoliceDistrictName>
+	<BlockAddress>700 BLK  GILBERT ST</BlockAddress>
+	<StreetType>SD</StreetType>
+	<StreetName>GILBERT</StreetName>
+	<PoliceDistrictNumber>3D</PoliceDistrictNumber>
+</Location_Dim>
+<Location_Dim>
+	<LocationKey>5</LocationKey>
+	<City>SILVER SPRING</City>
+	<State>MD</State>
+	<ZipCode>20912</ZipCode>
+	<PoliceDistrictName>SILVER SPRING</PoliceDistrictName>
+	<BlockAddress>500 BLK  DOMER AVE</BlockAddress>
+	<StreetType>AVE</StreetType>
+	<StreetName>DOMER</StreetName>
+	<PoliceDistrictNumber>3D</PoliceDistrictNumber>
+</Location_Dim>
+<Date_Dim>
+	<CrimeDateKey>1</CrimeDateKey>
+	<FullDate>02-09-2017</FullDate>
+	<DayOfWeek>1</DayOfWeek>
+	<TypeOfDay>Sunday</TypeOfDay>
+	<DayOfMonth>2</DayOfMonth>
+	<Month>9</Month>
+	<Quarter>4</Quarter>
+	<Year>2017</Year>
+</Date_Dim>
+<Date_Dim>
+	<CrimeDateKey>2</CrimeDateKey>
+	<FullDate>03-02-2017</FullDate>
+	<DayOfWeek>03</DayOfWeek>
+	<TypeOfDay>Sunday</TypeOfDay>
+	<DayOfMonth>03</DayOfMonth>
+	<Month>02</Month>
+	<Quarter>1</Quarter>
+	<Year>2017</Year>
+</Date_Dim>
+<Date_Dim>
+	<CrimeDateKey>3</CrimeDateKey>
+	<FullDate>09-04-2017</FullDate>
+	<DayOfWeek>02</DayOfWeek>
+	<TypeOfDay>Sunday</TypeOfDay>
+	<DayOfMonth>09</DayOfMonth>
+	<Month>04</Month>
+	<Quarter>2</Quarter>
+	<Year>2017</Year>
+</Date_Dim>
+<Date_Dim>
+	<CrimeDateKey>4</CrimeDateKey>
+	<FullDate>09-10-2017</FullDate>
+	<DayOfWeek>4</DayOfWeek>
+	<TypeOfDay>Sunday</TypeOfDay>
+	<DayOfMonth>9</DayOfMonth>
+	<Month>10</Month>
+	<Quarter>4</Quarter>
+	<Year>2017</Year>
+</Date_Dim>
+<Date_Dim>
+	<CrimeDateKey>5</CrimeDateKey>
+	<FullDate>10-08-2017</FullDate>
+	<DayOfWeek>1</DayOfWeek>
+	<TypeOfDay>Sunday</TypeOfDay>
+	<DayOfMonth>10</DayOfMonth>
+	<Month>08</Month>
+	<Quarter>3</Quarter>
+	<Year>2017</Year>
+</Date_Dim>
+<Crime_Fact>
+	<IncidentKey>1</IncidentKey>
+	<CrimeKey>1</CrimeKey>
+	<AgencyKey>1</AgencyKey>
+	<LocationKey>1</LocationKey>
+	<CrimeDateKey>1</CrimeDateKey>
+</Crime_Fact>
+<Crime_Fact>
+	<IncidentKey>2</IncidentKey>
+	<CrimeKey>2</CrimeKey>
+	<AgencyKey>2</AgencyKey>
+	<LocationKey>2</LocationKey>
+	<CrimeDateKey>2</CrimeDateKey>
+</Crime_Fact>
+<Crime_Fact>
+	<IncidentKey>3</IncidentKey>
+	<CrimeKey>3</CrimeKey>
+	<AgencyKey>3</AgencyKey>
+	<LocationKey>3</LocationKey>
+	<CrimeDateKey>3</CrimeDateKey>
+</Crime_Fact>
+<Crime_Fact>
+	<IncidentKey>4</IncidentKey>
+	<CrimeKey>4</CrimeKey>
+	<AgencyKey>4</AgencyKey>
+	<LocationKey>4</LocationKey>
+	<CrimeDateKey>4</CrimeDateKey>
+</Crime_Fact>
+<Crime_Fact>
+	<IncidentKey>5</IncidentKey>
+	<CrimeKey>5</CrimeKey>
+	<AgencyKey>5</AgencyKey>
+	<LocationKey>5</LocationKey>
+	<CrimeDateKey>5</CrimeDateKey>
+</Crime_Fact>
+</Crime>
